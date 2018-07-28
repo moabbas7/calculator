@@ -16,12 +16,12 @@ class new_calcultor():
 	def div(self,a,b):
 		return (a/b)
 
-obj1 = new_calcultor("whatname")
-results = obj1.add(3,4)
-results_2 = obj1.sub(5,2)
-print(results)
-print(results_2)
+class ScientificCalculator(new_calcultor):
 
+	def power(self,a):
+		return a*a
 
+def prints_something(some_string):
+	print("inside a function ouside a class"+some_string)
 
 
